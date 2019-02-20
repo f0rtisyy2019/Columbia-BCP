@@ -1,0 +1,21 @@
+example Analysis
+----------------------------
+Approximate Word Count: 120
+Approximate Sentence Count: 5
+Average Letter Count: 4.6
+Average Sentence Length: 24.0
+
+paragraph_1 Analysis
+----------------------------
+Approximate Word Count: 130
+Approximate Sentence Count: 5
+Average Letter Count: 6.392307692307693
+Average Sentence Length: 26.0
+
+paragraph_2 Analysis
+----------------------------
+Approximate Word Count: 287
+Approximate Sentence Count: 9
+Average Letter Count: 5.2125435540069684
+Average Sentence Length: 31.88888888888889
+
