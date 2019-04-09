@@ -1,0 +1,18 @@
+img.featured_image {
+	max-width: 100%;
+	width: 100%;
+}
+
+.mars_news h2 {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.mars_news img {
+	max-width: 100%;
+	width: 100%;
+}
+
+.mars_news div.card {
+	margin: 20px 0;
+}

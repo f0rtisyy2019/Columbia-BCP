@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <h2>Latest Mars News</h2>
+      <p><strong>{{mars.news_title}}</strong></p>
+      <p>{{mars.news_p}}</p>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h2>Featured Mars Image</h2>
+        <img class="featured_image" src="{{mars.featured_image_url}}">
+      </div>
+      <div class="col">
+        
+
+
+        <div class="card">
+          <div class="card-body">
+            <h3>Current Weather on Mars</h3>
+            <p class="card-text">{{mars.mars_weather}}</p>
+          </div>
+        </div>
+
+        <h3>Mars Facts</h3>
+        <div class="table">{{markup(mars.fact_html)}}</div>
+      </div>
+    </div>
+  
+    <div class="col-lg-12 col-md-12 col-sm-12 mars_news">
+      <h2>Mars Hemispheres</h2>
+      <div class="row">
+        {% for ele in mars.hemisphere_image_info %}
+        <div class="col-6">
+          <div class="card">
+            <img class="card-img-top" src="{{ele.img_url}}">
+            <div class="card-body">
+              <h3>{{ele.title}}</h3>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
