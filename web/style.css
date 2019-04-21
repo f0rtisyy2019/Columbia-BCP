@@ -1,0 +1,133 @@
+body {
+	background: #eee;
+	padding-bottom: 50px;
+}
+
+.align_center {
+	width: 100%;
+	background: #fff;
+}
+
+nav.navbar {
+	max-width: 1200px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+nav a.navbar-brand.name {
+	background: #0ea39c;
+	color: #fff;
+	padding: 12px 20px;
+	font-family: georgia;
+	margin-left: 40px;
+}
+
+nav > div.navbar-collapse {
+	margin-left: 58%;
+}
+
+.lat_body img {
+	max-width: 100%;
+	width: 100%;
+}
+
+.align_center.lat_body {
+	background: #eee;
+}
+
+.lat_body > .cont {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.lat_body > .cont > div { 
+	background: #fff;
+	padding-bottom: 30px;
+	margin: 35px 0 0;
+}
+
+.lat_body .left_col {
+	display: inline-block;
+	width: 68%;
+	float: left;
+}
+
+.lat_body .right_col {
+	display: inline-block;
+	width: 30%;
+	float: right;
+}
+
+.title {
+	margin: 20px 0;
+	color: #0ea39c;
+	font-family: georgia;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/* start for date page */
+body.data .lat_body > .cont {
+	background: #fff;
+	margin: 50px auto;
+	padding: 2px 35px;
+}
+
+body.data .lat_body > .cont > div {
+    padding: 0;
+    margin: 25px 0;
+}
+
+.lat_body > .cont > div.right_col .title {
+    padding: 0 15px;
+}
+
+body.data .lat_body > .cont .desc {
+	border-top: 1px solid #ddd;
+	padding-top: 20px;
+	margin-top: 0;
+}
+/* end for date page */
+
+footer {
+	display: inline-block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	line-height: 45px;
+	text-align: center;
+	border-top: 5px solid #0ea39c;
+	background: #666;
+	color: #fff;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	nav {
+		background: #0ea39c;
+	}
+	nav > div.navbar-collapse {
+		margin: 0 -10px;
+		padding: 0 20px;
+		background: #fff;
+	}
+	.navbar-light .navbar-toggler {
+	    border-color: rgba(255,255,255,.9);
+	}
+	.lat_body > .cont {
+		padding: 0 20px;
+	}
+	.lat_body > .cont > div.left_col,
+	.lat_body > .cont > div.right_col {
+		display: inline-block;
+		width: 100%;
+		float: none;
+	}
+}
+
+
+
+
+
